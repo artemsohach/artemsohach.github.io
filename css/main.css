@@ -30,7 +30,8 @@ input:focus, button:focus {
 }
 
 .header {
-  padding: 15px 0;
+  padding-bottom: 15px;
+  padding-top: 65px;
 }
 
 .header-contacts {
@@ -482,4 +483,35 @@ input:focus, button:focus {
 
 .offer-form__button {
   margin-bottom: 9px;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #373737;
+}
+
+.menu__list {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__list-link, .menu__list a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.menu__list-link:nth-of-type(-n+8), .menu__list a:nth-of-type(-n+8) {
+  border-right: 1px solid #cfcfd0;
+  padding-right: 25px;
 }
